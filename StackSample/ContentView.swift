@@ -19,6 +19,7 @@ struct ContentView: View {
                     .padding()
             }
             .background(Color.white)
+            .foregroundColor(.yellow)
             HStack {
                 Text("A")
                     .padding()
@@ -28,23 +29,31 @@ struct ContentView: View {
                     .padding()
             }
             .background(Color.white)
+            .foregroundColor(.green)
             VStack(alignment: .center, spacing: 10) {
                 Text("THE")
-                    .kerning(10)
+                    .font(.title)
+                    .kerning(20)
                 Text("FIRST")
-                    .kerning(10)
+                    .font(.title)
+                    .tracking(20)
                     .fixedSize()
                 Text("TAKE")
-                    .kerning(10)
+                    .font(.title)
+                    .tracking(20)
+                    .background(Color.init(.lightGray))
+                Text("TAKE")
+                    .kerning(20)
+                    .font(.system(size: 40, weight: .regular, design: .monospaced))
+                    .frame(maxWidth: .infinity, alignment: .center)
+                    .background(Color.init(.lightGray))
             }
             .padding(.horizontal, 40)
             .background(Color.white)
             .foregroundColor(.pink)
         }
         .padding()
-        .background(Color.blue)
-        .foregroundColor(.yellow)
-        .frame(width: 200, height: 200, alignment: .center)
+        .background(Color(red: 74/255, green: 137/255, blue: 255/255, opacity: 255/255))
     }
 }
 
