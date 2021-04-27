@@ -57,9 +57,6 @@ struct ContentView: View {
                     Text("Don't use .appearance()!")
                         .padding()
                         .cornerRadius(10)
-                        .overlay(NavigationConfigurator { nc in
-                            nc.navigationBar.barTintColor = .blue
-                        })
                     NavigationLink("NavigationLink", destination: SecondView())
                         .padding()
                         .frame(maxWidth: .infinity)
@@ -73,7 +70,10 @@ struct ContentView: View {
                         .background(Color(red: 134/255, green: 134/255, blue: 255/255))
                         .foregroundColor(.white)
                         .padding()
-                        .navigationBarTitle("Try it!Swift", displayMode: .inline)
+                        .overlay(NavigationConfigurator { nc in
+                            nc.navigationBar.barTintColor = .blue
+                            nc.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+                        })
                 }
                 .frame(maxWidth: .infinity)
                 .background(Color.init(red: 240/255, green: 240/255, blue: 240/255))
@@ -81,6 +81,7 @@ struct ContentView: View {
             .padding()
             .border(Color.black)
         }
+        .navigationBarTitle("Try it!Swift", displayMode: .inline)
     .navigationViewStyle(StackNavigationViewStyle())
     }
 
