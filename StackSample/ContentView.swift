@@ -79,6 +79,7 @@ struct ContentView: View {
                 .background(Color.init(red: 240/255, green: 240/255, blue: 240/255))
             }
             .padding()
+            .border(Color.black)
         }
     .navigationViewStyle(StackNavigationViewStyle())
     }
