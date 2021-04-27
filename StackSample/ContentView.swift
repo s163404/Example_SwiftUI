@@ -56,26 +56,35 @@ struct ContentView: View {
                     .padding()
                     .background(Color.white)
                     .cornerRadius(10)
-
+                Divider()
+                VStack {
+                    Text("Don't use .appearance()!")
+                        .padding()
+                        .cornerRadius(10)
+                        .overlay(NavigationConfigurator { nc in
+                            nc.navigationBar.barTintColor = .blue
+                        })
+                    NavigationLink("NavigationLink", destination: SecondView())
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color(red: 75/255, green: 134/255, blue: 255/255))
+                        .foregroundColor(.white)
+                        .navigationBarTitle("Try it!Swift", displayMode: .inline)
+                    
+                    Button("Button") {}
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color(red: 134/255, green: 134/255, blue: 255/255))
+                        .foregroundColor(.white)
+                        .padding()
+                        .navigationBarTitle("Try it!Swift", displayMode: .inline)
+                }
+                .frame(maxWidth: .infinity)
+                .background(Color.init(red: 240/255, green: 240/255, blue: 240/255))
             }
             .padding()
-            .background(Color(red: 74/255, green: 137/255, blue: 255/255, opacity: 255/255))
-
         }
-        .navigationViewStyle(StackNavigationViewStyle())
-    }
-}
-
-struct NavigationConfigurator: UIViewControllerRepresentable {
-    var configure: (UINavigationController) -> Void = { _ in }
-
-    func makeUIViewController(context: Context) -> UIViewController {
-        UIViewController()
-    }
-    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
-        if let nc = uiViewController.navigationController {
-            self.configure(nc)
-        }
+    .navigationViewStyle(StackNavigationViewStyle())
     }
 
 }
