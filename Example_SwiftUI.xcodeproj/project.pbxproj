@@ -24,6 +24,7 @@
 		66154ECD2625E673008AF6E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66154ECC2625E673008AF6E3 /* Preview Assets.xcassets */; };
 		66154ED02625E673008AF6E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66154ECE2625E673008AF6E3 /* LaunchScreen.storyboard */; };
 		66154EDA2625E8C3008AF6E3 /* MySubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66154ED92625E8C3008AF6E3 /* MySubView.swift */; };
+		66A16CAA263855B100E398FB /* NavigationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A16CA9263855B100E398FB /* NavigationConfigurator.swift */; };
 		66C823CA2592473A007DED2F /* Example_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C823C92592473A007DED2F /* Example_SwiftUIApp.swift */; };
 		66C823CC2592473A007DED2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C823CB2592473A007DED2F /* ContentView.swift */; };
 		66C823CE2592473B007DED2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66C823CD2592473B007DED2F /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		66154ECF2625E673008AF6E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66154ED12625E673008AF6E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66154ED92625E8C3008AF6E3 /* MySubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySubView.swift; sourceTree = "<group>"; };
+		66A16CA9263855B100E398FB /* NavigationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfigurator.swift; sourceTree = "<group>"; };
 		66C823C62592473A007DED2F /* Example_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66C823C92592473A007DED2F /* Example_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_SwiftUIApp.swift; sourceTree = "<group>"; };
 		66C823CB2592473A007DED2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				66150A79263070D60060EAED /* AppDelegate.swift */,
 				66150A7B263070D60060EAED /* SceneDelegate.swift */,
 				66150A7D263070D60060EAED /* ContentView.swift */,
+				66A16CA9263855B100E398FB /* NavigationConfigurator.swift */,
 				66150A8F263328500060EAED /* SecondView.swift */,
 				66150A7F263070D60060EAED /* Assets.xcassets */,
 				66150A84263070D60060EAED /* LaunchScreen.storyboard */,
@@ -352,6 +355,7 @@
 				66150A7A263070D60060EAED /* AppDelegate.swift in Sources */,
 				66150A7C263070D60060EAED /* SceneDelegate.swift in Sources */,
 				66150A90263328500060EAED /* SecondView.swift in Sources */,
+				66A16CAA263855B100E398FB /* NavigationConfigurator.swift in Sources */,
 				66150A7E263070D60060EAED /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,6 +457,7 @@
 				DEVELOPMENT_TEAM = G3YPY29B4B;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = StackSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,6 +479,7 @@
 				DEVELOPMENT_TEAM = G3YPY29B4B;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = StackSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
