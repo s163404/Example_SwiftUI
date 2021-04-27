@@ -52,10 +52,6 @@ struct ContentView: View {
                 .padding(.horizontal, 40)
                 .background(Color.white)
                 .foregroundColor(.pink)
-                NavigationLink("次へ", destination: SecondView())
-                    .padding()
-                    .background(Color.white)
-                    .cornerRadius(10)
                 Divider()
                 VStack {
                     Text("Don't use .appearance()!")
