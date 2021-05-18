@@ -35,6 +35,7 @@
 		66C823CC2592473A007DED2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C823CB2592473A007DED2F /* ContentView.swift */; };
 		66C823CE2592473B007DED2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66C823CD2592473B007DED2F /* Assets.xcassets */; };
 		66C823D12592473B007DED2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66C823D02592473B007DED2F /* Preview Assets.xcassets */; };
+		66E1DF5B2654178B00997A31 /* LayeredImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E1DF5A2654178B00997A31 /* LayeredImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		66C823CD2592473B007DED2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66C823D02592473B007DED2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		66C823D22592473B007DED2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66E1DF5A2654178B00997A31 /* LayeredImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayeredImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 				66154ECB2625E673008AF6E3 /* Preview Content */,
 				66150A0D262C18D90060EAED /* MySubView2.swift */,
 				66150A13262C1A340060EAED /* ContentView2.swift */,
+				66E1DF5A2654178B00997A31 /* LayeredImage.swift */,
 			);
 			path = NavigationSample;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 			files = (
 				66154EC42625E65E008AF6E3 /* AppDelegate.swift in Sources */,
 				66154EDA2625E8C3008AF6E3 /* MySubView.swift in Sources */,
+				66E1DF5B2654178B00997A31 /* LayeredImage.swift in Sources */,
 				66150A0E262C18D90060EAED /* MySubView2.swift in Sources */,
 				66150A14262C1A340060EAED /* ContentView2.swift in Sources */,
 				66154EC62625E65E008AF6E3 /* SceneDelegate.swift in Sources */,

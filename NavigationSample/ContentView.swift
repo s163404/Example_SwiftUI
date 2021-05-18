@@ -37,7 +37,7 @@ struct ContentView: View {
                 }
                 .navigationBarTitle("ホーム", displayMode: .large)
             }
-            Image(systemName: "gamecontroller")
+            LayeredImage()
                 .padding(.top, navigationBarHeight + 8)
         }
     }
@@ -46,5 +46,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(ScreenState())
     }
 }
