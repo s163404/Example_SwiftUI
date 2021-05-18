@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    let navigationBarHeight: CGFloat = 44
+    
     var body: some View {
         // NavigationViewはコンテナビュー
         // ナビゲーションスタックの階層最上位のViewにNavigationViewをつける
+        ZStack(alignment: .top) {
         NavigationView {
             VStack {
                 Text("Hello! World")
@@ -33,6 +36,9 @@ struct ContentView: View {
                 }
             }
             .navigationBarTitle("ホーム", displayMode: .large)
+            }
+            Image(systemName: "gamecontroller")
+                .padding(.top, navigationBarHeight + 8)
         }
     }
 }
