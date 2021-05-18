@@ -8,7 +8,7 @@
 import SwiftUI
 import Combine
 
-class ScreenState: ObservableObject {
+public class ScreenState: ObservableObject {
     @Published var imageName = "gamecontroller.fill"
     
     func toggle() {

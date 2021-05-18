@@ -15,6 +15,8 @@ struct MySubView: View {
         "\(prefix)(\(index))"
     }
     
+    @EnvironmentObject var screenState: ScreenState
+    
     var body: some View {
         VStack {
             Text(displayText)
@@ -32,6 +34,9 @@ struct MySubView: View {
             }
         }
         .navigationBarTitle("\(displayText)", displayMode: .inline)
+        .onAppear() {
+            screenState.toggle()
+        }
     }
 }
 
