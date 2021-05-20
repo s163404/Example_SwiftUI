@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     let navigationBarHeight: CGFloat = 44
-    @State var text: String = ""
-    @State var fieldState = false
+    
+    @State var toTransition = false
     
     var body: some View {
         // NavigationViewはコンテナビュー
@@ -18,18 +18,6 @@ struct ContentView: View {
         ZStack(alignment: .top) {
             NavigationView {
                 VStack {
-                    VStack(spacing: 16) {
-                        TextField("なにか入力せえ", text: $text)
-                            .textFieldStyle(CustomTextFieldStyle(isError: $fieldState))
-                        Button(fieldState ? "オン" : "オフ") {
-                            fieldState.toggle()
-                        }
-                        .padding()
-                        .background(Color.yellow)
-                        .cornerRadius(10.0)
-                    }
-                    .padding()
-                    .background(Color(UIColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 1)))
                     // ナビゲーション構造の下にビューを追加し、
                     // そのビューに遷移するボタンを作成。
                     NavigationLink(
@@ -46,6 +34,18 @@ struct ContentView: View {
                         destination: MySubView(prefix: "湯本", index: 0, childCount: 5)) {
                         Text("福島県いわき市")
                     }
+                    Button("テキストフィールドカスタム検証画面へ") { self.toTransition.toggle()
+                    }
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color(red: 255/255, green: 108/255, blue: 155/255))
+                    .cornerRadius(10.0)
+                    NavigationLink(
+                        destination: TextInputScreen(),
+                        isActive: $toTransition,
+                        label: {
+                            EmptyView()
+                        })
                 }
                 .navigationBarTitle("ホーム", displayMode: .large)
             }
